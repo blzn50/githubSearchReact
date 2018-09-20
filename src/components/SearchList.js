@@ -1,10 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SearchList = ({ data }) => (
-  <div>
-    <ul>
+  <div className="searchList">
+    <ul className="searchListing">
       {data.map(data => (
-        <li key={data.id}>{data.login}</li>
+        <Link
+          to={{
+            pathname: `/users/${data.login}`,
+            state: {
+              info: data
+            }
+          }}
+        >
+          <li key={data.id}>{data.login}</li>
+        </Link>
       ))}
     </ul>
   </div>

@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink
-} from 'reactstrap';
+import { Navbar, NavbarToggler, NavbarBrand } from 'reactstrap';
 
 class Header extends React.Component {
   state = {
@@ -26,13 +18,13 @@ class Header extends React.Component {
         <Navbar color="dark" expand="md" className="mb-5">
           <NavbarBrand href="/">Github Search</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
+          {/* <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/">Somewhere</NavLink>
+                <NavLink>Here</NavLink>
               </NavItem>
             </Nav>
-          </Collapse>
+          </Collapse> */}
         </Navbar>
       </div>
     );

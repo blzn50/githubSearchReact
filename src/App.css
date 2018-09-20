@@ -1,8 +1,45 @@
 a {
-  color: red;
+  color: white;
+  text-decoration: none;
 }
 .search {
   position: relative;
   margin: 5px auto;
   width: 50%;
+}
+.searchList {
+  position: relative;
+  margin: 5px auto;
+  width: 50%;
+  margin-top: 2rem;
+}
+.searchListing {
+  list-style-type: none;
+  padding: 0;
+}
+
+.searchListing li {
+  background: rgb(241, 237, 237);
+  padding: 0.5em 0.7em;
+  cursor: pointer;
+  margin-top: 0.3em;
+}
+.searchListing li:hover {
+  background: rgb(156, 150, 150);
+}
+
+.card {
+  padding: 5px;
+}
+
+.stats {
+  padding: 0.3em 0.5em;
+  margin-bottom: 0.3em;
+  border: 0;
+  background: rgb(235, 233, 233);
+  cursor: pointer;
+}
+
+.stats:hover {
+  background: rgb(223, 221, 221);
 }
