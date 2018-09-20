@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 a {
   color: white;
+  text-decoration: none;
+}
+
+a:hover {
   text-decoration: none;
 }
 .search {
@@ -42,4 +48,29 @@ a {
 
 .stats:hover {
   background: rgb(223, 221, 221);
+}
+
+.table td {
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+  width: 25%;
+  line-height: 30px;
+}
+
+.table-key {
+  display: inline-block;
+  font-weight: 600;
+}
+.table-value {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .table td {
+    width: 35%;
+  }
 }

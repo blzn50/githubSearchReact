@@ -14,13 +14,18 @@ class Profile extends Component {
       });
   }
   render() {
-    // this is for when data is passed from linking component
+    // this is for when data is passed from Link
     // const { info } = this.props.location.state;
     // console.log(info);
     const { user } = this.state;
     return (
       <div className="container">
-        <h1>Profile of {user.name}</h1>
+        {user.name && (
+          <h1>
+            Profile of <span style={{ fontWeight: 600 }}>{user.name}</span>
+          </h1>
+        )}
+
         <div className="container">
           <div className="row">
             <div className="col-md-4">
@@ -59,7 +64,53 @@ class Profile extends Component {
               </div>
             </div>
             <div className="col-md-8">
-              <div>{user.name}</div>
+              <h3>{user.name}</h3>
+              <hr />
+              <table className="table table-borderless">
+                <tbody>
+                  {user.login && (
+                    <tr>
+                      <td className="table-key">Username</td>
+                      <td className="table-value">{user.login}</td>
+                    </tr>
+                  )}
+
+                  {user.bio && (
+                    <tr>
+                      <td className="table-key">Bio</td>
+                      <td className="table-value">{user.bio}</td>
+                    </tr>
+                  )}
+
+                  {user.company && (
+                    <tr>
+                      <td className="table-key">Company</td>
+                      <td className="table-value">{user.company}</td>
+                    </tr>
+                  )}
+
+                  {user.location && (
+                    <tr>
+                      <td className="table-key">Located</td>
+                      <td className="table-value">{user.location}</td>
+                    </tr>
+                  )}
+
+                  {user.created_at && (
+                    <tr>
+                      <td className="table-key">Account Created</td>
+                      <td className="table-value">{user.created_at}</td>
+                    </tr>
+                  )}
+
+                  {user.blog && (
+                    <tr>
+                      <td className="table-key">Blog:</td>
+                      <td className="table-value">{user.blog}</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

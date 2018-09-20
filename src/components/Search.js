@@ -8,7 +8,7 @@ const Search = ({ handleSearch, handleKeyPress }) => {
         <Input
           type="text"
           name="search"
-          placeholder="Search profile/repos in github..."
+          placeholder="Search profile in github..."
           className="mb-2"
         />
         <Button style={{ width: '30%' }} color="success">

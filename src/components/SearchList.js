@@ -13,7 +13,9 @@ const SearchList = ({ data }) => (
             }
           }}
         >
-          <li key={data.id}>{data.login}</li>
+          <li style={{ color: '#111' }} key={data.id}>
+            {data.login}
+          </li>
         </Link>
       ))}
     </ul>
