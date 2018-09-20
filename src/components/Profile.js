@@ -10,7 +10,6 @@ class Profile extends Component {
       .then(res => res.json())
       .then(json => {
         this.setState({ user: json });
-        console.log(this.state.user);
       });
   }
   render() {
@@ -105,8 +104,14 @@ class Profile extends Component {
 
                   {user.blog && (
                     <tr>
-                      <td className="table-key">Blog:</td>
-                      <td className="table-value">{user.blog}</td>
+                      <td className="table-key">
+                        <span className="blog">Blog:</span>
+                      </td>
+                      <td className="table-value">
+                        <a className="blog-link" href={user.blog}>
+                          {user.blog}
+                        </a>
+                      </td>
                     </tr>
                   )}
                 </tbody>
