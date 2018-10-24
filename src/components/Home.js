@@ -4,7 +4,8 @@ import SearchList from './SearchList';
 
 class Home extends Component {
   state = {
-    data: []
+    data: [],
+    activePage: 1,
   };
 
   handleSearch = async e => {
@@ -19,24 +20,24 @@ class Home extends Component {
     const data = await api_call.json();
 
     if (q) {
-      this.setState({ data: data.items });
-      console.log(this.state.data);
+      this.setState({ data: data.items, totalCount: data.item_count });
     }
   };
 
-  handleKeyPress = e => {
-    if (e.key === 'enter') {
-      this.handleSearch();
-    }
+  handlePageChange = pageNumber => {
+    this.setState({ activePage: pageNumber });
   };
+
   render() {
     return (
       <div>
-        <Search
-          handleSearch={this.handleSearch}
-          handleKeyPress={this.handleKeyPress}
+        <Search handleSearch={this.handleSearch} handleKeyPress={this.handleKeyPress} />
+        <SearchList
+          className="mt-4"
+          data={this.state.data}
+          activePageNumber={this.state.activePage}
+          handlePageChange={this.handlePageChange}
         />
-        <SearchList className="mt-4" data={this.state.data} />
       </div>
     );
   }

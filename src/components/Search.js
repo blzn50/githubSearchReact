@@ -4,7 +4,7 @@ import { Button, Form, Input } from 'reactstrap';
 const Search = ({ handleSearch, handleKeyPress }) => {
   return (
     <div className="search">
-      <Form onSubmit={handleSearch} onKeyPress={handleKeyPress}>
+      <Form onSubmit={handleSearch}>
         <Input
           type="text"
           name="search"
