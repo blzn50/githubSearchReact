@@ -8,7 +8,6 @@ const SearchList = ({ data, activePageNumber, handlePageChange }) => {
   const startPage = itemPerPage * (activePageNumber - 1);
   const endPage = startPage + (itemPerPage - 1);
   const totalItems = data.length;
-  console.log(startPage + ' : ' + endPage);
 
   return (
     <div className="searchList">

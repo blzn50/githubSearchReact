@@ -4,7 +4,7 @@ import Loading from '../assets/loading.gif';
 class Profile extends Component {
   state = {
     user: {},
-    error: undefined,
+    error: null,
     loader: true,
   };
 
@@ -85,7 +85,6 @@ class Profile extends Component {
                           <td className="table-value">{user.login}</td>
                         </tr>
                       )}
-
                       {user.bio && (
                         <tr>
                           <td className="table-key">Bio</td>

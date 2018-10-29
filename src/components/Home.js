@@ -12,15 +12,11 @@ class Home extends Component {
     e.preventDefault();
     const q = e.target.elements.search.value;
 
-    const api_call = await fetch(
-      `https://api.github.com/search/users?q=${q}&client_id=${
-        process.env.REACT_APP_CLIENTID
-      }&client_secret=${process.env.REACT_APP_CLIENTSECRET}`
-    );
+    const api_call = await fetch(`https://api.github.com/search/users?q=${q}`);
     const data = await api_call.json();
 
     if (q) {
-      this.setState({ data: data.items, totalCount: data.item_count });
+      this.setState({ data: data.items, totalCount: data.item_count, activePage: 1 });
     }
   };
 
