@@ -7,6 +7,7 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: tomato;
 }
 
 .search {
@@ -91,5 +92,14 @@ a:hover {
 @media screen and (max-width: 991px) {
   .table td {
     width: 35%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .search {
+    width: 80%;
+  }
+  .searchList {
+    width: 80%;
   }
 }
