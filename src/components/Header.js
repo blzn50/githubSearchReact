@@ -16,7 +16,7 @@ class Header extends React.Component {
     return (
       <div>
         <Navbar color="secondary" expand="md" className="mb-5">
-          <NavbarBrand href="/">Github Profile Search</NavbarBrand>
+          <NavbarBrand href="/githubSearchReact">Github Profile Search</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           {/* <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>

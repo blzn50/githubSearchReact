@@ -109,7 +109,7 @@ class Profile extends Component {
                       {user.created_at && (
                         <tr>
                           <td className="table-key">Account Created</td>
-                          <td className="table-value">{user.created_at}</td>
+                          <td className="table-value">{user.created_at.split('T')[0]}</td>
                         </tr>
                       )}
 
