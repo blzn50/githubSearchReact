@@ -15,7 +15,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" resetSession={this.resetSession} component={Home} />
           <Route path="/users/:id" component={Profile} />
           <Route component={NotFound} />
         </Switch>

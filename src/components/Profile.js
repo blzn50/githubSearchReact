@@ -79,41 +79,37 @@ class Profile extends Component {
                   <hr />
                   <table className="table table-borderless">
                     <tbody>
-                      {user.login && (
+                      {user.login ? (
                         <tr>
                           <td className="table-key">Username</td>
                           <td className="table-value">{user.login}</td>
                         </tr>
-                      )}
-                      {user.bio && (
+                      ) : null}
+                      {user.bio ? (
                         <tr>
                           <td className="table-key">Bio</td>
                           <td className="table-value">{user.bio}</td>
                         </tr>
-                      )}
-
-                      {user.company && (
+                      ) : null}
+                      {user.company ? (
                         <tr>
                           <td className="table-key">Company</td>
                           <td className="table-value">{user.company}</td>
                         </tr>
-                      )}
-
-                      {user.location && (
+                      ) : null}
+                      {user.location ? (
                         <tr>
                           <td className="table-key">Located</td>
                           <td className="table-value">{user.location}</td>
                         </tr>
-                      )}
-
-                      {user.created_at && (
+                      ) : null}
+                      {user.created_at ? (
                         <tr>
                           <td className="table-key">Account Created</td>
                           <td className="table-value">{user.created_at.split('T')[0]}</td>
                         </tr>
-                      )}
-
-                      {user.blog && (
+                      ) : null}
+                      {user.blog ? (
                         <tr>
                           <td className="table-key">
                             <span className="blog">Blog:</span>
@@ -124,7 +120,7 @@ class Profile extends Component {
                             </a>
                           </td>
                         </tr>
-                      )}
+                      ) : null}
                     </tbody>
                   </table>
                 </div>
