@@ -1,6 +1,15 @@
 {
-  "main.css": "static/css/main.06c6b06d.css",
-  "main.css.map": "static/css/main.06c6b06d.css.map",
-  "main.js": "static/js/main.81eef6f8.js",
-  "main.js.map": "static/js/main.81eef6f8.js.map"
+  "main.css": "/githubSearchReact/static/css/main.4d245e08.chunk.css",
+  "main.js": "/githubSearchReact/static/js/main.90d3c4c0.chunk.js",
+  "main.js.map": "/githubSearchReact/static/js/main.90d3c4c0.chunk.js.map",
+  "runtime~main.js": "/githubSearchReact/static/js/runtime~main.9ddbd98d.js",
+  "runtime~main.js.map": "/githubSearchReact/static/js/runtime~main.9ddbd98d.js.map",
+  "static/css/2.60a933f1.chunk.css": "/githubSearchReact/static/css/2.60a933f1.chunk.css",
+  "static/js/2.0e204951.chunk.js": "/githubSearchReact/static/js/2.0e204951.chunk.js",
+  "static/js/2.0e204951.chunk.js.map": "/githubSearchReact/static/js/2.0e204951.chunk.js.map",
+  "index.html": "/githubSearchReact/index.html",
+  "precache-manifest.2f548b5875174ad3d9cc2110c76f9ee3.js": "/githubSearchReact/precache-manifest.2f548b5875174ad3d9cc2110c76f9ee3.js",
+  "service-worker.js": "/githubSearchReact/service-worker.js",
+  "static/css/2.60a933f1.chunk.css.map": "/githubSearchReact/static/css/2.60a933f1.chunk.css.map",
+  "static/css/main.4d245e08.chunk.css.map": "/githubSearchReact/static/css/main.4d245e08.chunk.css.map"
 }
