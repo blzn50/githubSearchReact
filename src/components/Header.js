@@ -2,23 +2,23 @@ import React from 'react';
 import { Navbar, NavbarToggler, NavbarBrand } from 'reactstrap';
 
 class Header extends React.Component {
-  state = {
-    isOpen: false,
-  };
+  // state = {
+  //   isOpen: false,
+  // };
 
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
-  }
+  // toggle() {
+  //   this.setState({
+  //     isOpen: !this.state.isOpen,
+  //   });
+  // }
 
   render() {
     return (
       <div>
         <Navbar color="secondary" expand="md" className="mb-5">
           <NavbarBrand href="/githubSearchReact">Github Profile Search</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          {/* <Collapse isOpen={this.state.isOpen} navbar>
+          {/* <NavbarToggler onClick={this.toggle} />
+           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink>Here</NavLink>
